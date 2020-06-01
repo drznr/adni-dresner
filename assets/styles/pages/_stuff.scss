@@ -1,0 +1,50 @@
+.stuff-page {
+    &-lawyer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+
+        img {
+            display: none;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            object-position: center;
+            border: 3px solid $clr3;
+            border-radius: 50%;
+            padding: 3px;
+            @include for-mobile-layout {
+                display: initial;
+            }
+        }
+        &-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-right: 40px;
+
+            h3 {
+                align-self: flex-start;
+                color: $clr2;
+                font-size: 1.1em;
+                border-bottom: 1px solid $clr2;
+                margin-bottom: 10px;
+            }
+            p {
+                line-height: rem(32px);
+                @include for-narrow-layout {
+                    width: 80%;
+                }
+                img {
+                    display: initial;
+                    float: right;
+                    shape-outside: circle();
+                    margin-left: 20px;
+                    @include for-mobile-layout {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

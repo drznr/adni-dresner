@@ -1,0 +1,37 @@
+.about-preview {
+    height: 350px;
+    @media (min-width: 370px) {
+        height: 300px;
+    }
+    @media (min-width: 480px) {
+        height: 200px;
+    }
+    @include for-mobile-layout {
+        height: 150px;
+    }
+
+    p {
+        background-color: $white;
+        border: $border-slight;
+        box-shadow: $shadow;
+        padding: rem(20px) rem(40px);
+        line-height: rem(24px);
+        border-radius: 15px;
+        transform: translateY(-30%);
+        @include for-mobile-layout {
+            transform: translateY(-50%);
+        }
+
+        strong {
+            font-family: assistent-bold, sans-serif;
+            font-weight: 700;
+            color: $clr2;
+            font-size: 1.2em;
+        }
+        .link {
+            margin-right: rem(5px);
+            color: $clr1;
+            text-decoration: underline;
+        }
+    }
+}

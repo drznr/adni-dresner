@@ -1,0 +1,9 @@
+.about-page {
+    p {
+        margin-bottom: rem(25px);
+        line-height: rem(24px);
+        @include for-narrow-layout {
+            max-width: rem(750px);
+        }
+    }
+}

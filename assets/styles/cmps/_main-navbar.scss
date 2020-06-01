@@ -1,0 +1,136 @@
+.main-navbar {  
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: rem(15px) 0;
+    background-color: $white;
+    border-bottom: $border-slight;
+    box-shadow: $shadow;
+    
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h1 {
+        width: 9ch;
+        text-align: center;
+        font-size: rem(24px);
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        @include for-narrow-layout {
+            justify-content: space-between;
+            align-self: stretch;
+            width: 45%;
+        }
+
+        .contacts {
+            position: absolute;
+            bottom: rem(-45px);
+            left: 20px;
+            direction: ltr;
+            font-size: .9em;
+            display: inline-flex;
+            align-items: flex-start;
+            flex-direction: column;
+            @include for-mobile-layout {
+                position: initial;
+                bottom: unset;
+                left: unset;
+                color: $clr1;
+            }
+            @include for-narrow-layout {
+               flex-direction: row;
+            }
+
+            a {
+                @include for-narrow-layout {
+                    margin-left: rem(15px);
+                }
+            }
+        }
+        .nav {
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 9;
+            background-color: $clr3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform .6s linear;
+            @include for-narrow-layout {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: stretch;
+                position: initial;
+                top: unset;
+                right: unset;
+                z-index: unset;
+                height: unset;
+                width: unset;
+                background-color: transparent;
+                transform: none;
+            }
+            
+            &.open {
+                transform: translateX(0);
+            }
+            &-link {
+                font-family: assistant-bold, sans-serif;
+                font-weight: 700;
+                position: relative;
+                margin: rem(10px) 0;
+                transition: color .3s;
+                @include for-narrow-layout {
+                    margin: 0;
+                }
+
+                @include hover-supported {
+                    color: $clr2;
+
+                    &::after {
+                        transform: scaleX(1);
+                    }
+                }
+                &::after {
+                    @include for-narrow-layout {
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        bottom: rem(-16px);
+                        left: 0;
+                        width: 100%;
+                        height: 4px;
+                        background-color: $clr2;
+                        transform: scaleX(0);
+                        transform-origin: right;
+                        transition: transform .3s;
+                    }
+                }
+            }
+            .router-link-active {
+                color: $clr2;
+                
+                &::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+    &-toggle {
+        z-index: 10;
+        @include for-narrow-layout {
+            display: none;
+        }
+    }
+}

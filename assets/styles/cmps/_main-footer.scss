@@ -1,0 +1,25 @@
+.main-footer {
+    padding: 60px 0 20px;
+    background-color: $clr1;
+    color: $white;
+
+    h2 {
+        margin: 0 0 rem(20px) 0;
+        font-family: assistant, sans-serif;
+        color: inherit;
+    }
+    span {
+        display: block;
+        
+        &:first-of-type {
+            margin-bottom: rem(20px);
+        }
+        &:not(:first-of-type) {
+            padding: rem(5px) 0;
+        }
+    } 
+    &-copy {
+        margin-top: 60px;
+        color: $clr3;
+    }
+}

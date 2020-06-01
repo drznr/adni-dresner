@@ -1,0 +1,23 @@
+/// SASS Setup
+@import './setup/variables';
+@import './setup/functions';
+@import './setup/mixins';
+
+/// Global Styles
+@import './global/typography';
+@import './global/reset';
+@import './global/base';
+@import './global/helpers';
+
+/// Components
+@import './cmps/main-navbar';
+@import './cmps/main-header';
+@import './cmps/about-preview';
+@import './cmps/expertises-preview';
+@import './cmps/stuff-preview';
+@import './cmps/main-footer';
+
+/// Pages
+@import './pages/about';
+@import './pages/expertises';
+@import './pages/stuff';

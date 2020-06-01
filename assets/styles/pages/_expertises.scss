@@ -1,0 +1,33 @@
+.expertises-page {
+    &-area {
+        display: flex;
+        margin: rem(25px) 0;
+
+        [alt=icon] {
+            display: none;
+            width: 180px;
+            margin-left: rem(40px);
+                @include for-mobile-layout {
+                    display: initial;
+                }
+        }
+        &-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            h3 {
+                align-self: flex-start;
+                color: $clr2;
+                font-size: 1.1em;
+                border-bottom: 1px solid $clr2;
+            }
+            p {
+                line-height: rem(32px);
+                @include for-narrow-layout {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
