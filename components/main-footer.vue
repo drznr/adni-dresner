@@ -5,7 +5,7 @@
             <span>ז'בוטינסקי 33, רמת גן</span>
             <span>
                 <font-awesome-icon icon="phone-alt" />
-                +972 (03) 6131334
+                <span class="phone">+972 (03) 6131334</span>
             </span>
             <span>
                 <a href="mailto:dresner@dresner.co.il">

@@ -17,6 +17,14 @@
         &:not(:first-of-type) {
             padding: rem(5px) 0;
         }
+        svg {
+            margin-left: 3px;
+        }
+        &.phone {
+            direction: ltr;
+            text-align: right;
+            display: inline-block;
+        }
     } 
     &-copy {
         margin-top: 60px;
