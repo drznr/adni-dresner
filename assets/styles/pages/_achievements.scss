@@ -1,0 +1,15 @@
+.achievements-page {
+   &-achievement {
+      display: flex;
+      flex-direction: column;
+      margin: rem(25px) 0;
+
+      p {
+        margin: rem(15px) 0;
+      }
+      a {
+         color: $clr1;
+         font-weight: 700;
+      }
+   }
+}

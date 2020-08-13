@@ -24,10 +24,6 @@
             margin-right: 40px;
 
             h3 {
-                align-self: flex-start;
-                color: $clr2;
-                font-size: 1.1em;
-                border-bottom: 1px solid $clr2;
                 margin-bottom: 10px;
             }
             p {
@@ -45,6 +41,11 @@
                     }
                 }
             }
+        }
+        a {
+            margin-top: rem(15px);
+            color: $clr1;
+            font-weight: 700;
         }
     }
 }

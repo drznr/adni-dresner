@@ -1,5 +1,5 @@
 <template>
-    <footer class="main-footer">
+    <footer class="main-footer" id="contact">
         <div class="container">
             <h2>צבי דרזנר ושות'</h2>
             <span>ז'בוטינסקי 33, רמת גן</span>

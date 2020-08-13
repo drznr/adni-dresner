@@ -18,6 +18,12 @@ h2 {
     color: $clr2;
     margin: rem(55px) 0 rem(20px);
 }
+h3 {
+    align-self: flex-start;
+    color: $clr2;
+    font-size: 1.1em;
+    border-bottom: 1px solid $clr2;
+}
 body::-webkit-scrollbar {
     width: 0.7em;
 }

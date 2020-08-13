@@ -30,9 +30,12 @@
                     <nuxt-link to="/expertises" class="nav-link" @click.native="closeNav">
                         תחומי התמחות
                     </nuxt-link>
-                    <nuxt-link to="/accomplishments" class="nav-link" @click.native="closeNav">
+                    <nuxt-link to="/achievements" class="nav-link" @click.native="closeNav">
                         הישגים
                     </nuxt-link>
+                    <a href="#contact" class="nav-link" @click="closeNav">
+                        צור קשר
+                    </a>
                 </ul>
             </nav>
             <hamburger-toggle class="main-navbar-toggle" :is-menu-open="isMenuOpen" @menu-toggle="isMenuOpen = !isMenuOpen" />

@@ -13,6 +13,7 @@
                         <img :src="require(`~/assets/imgs/${lawyer.img}`)" alt="lawyer's image">
                         {{ lawyer.txt }}
                     </p>
+                    <a href="mailto:example@example.com" target="_blank">example@example.com</a>
                 </div>
             </div>
         </main>
