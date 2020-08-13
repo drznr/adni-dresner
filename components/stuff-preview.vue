@@ -7,7 +7,7 @@
                     <figure>
                         <img :src="require(`~/assets/imgs/${lawyer.img}`)" alt="lawyer's image">
                     </figure>
-                    <h3>{{ lawyer.name }}</h3>
+                    <h4>{{ lawyer.name }}</h4>
                     <span>קרא עוד...</span>
                 </div>
             </nuxt-link>
